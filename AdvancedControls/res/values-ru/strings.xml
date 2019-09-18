@@ -24,4 +24,21 @@
     <string name="yellow_torch_brightness_summary_head">Установить максимальную яркость желтого светодиода</string>
     <string name="white_torch_brightness_title_head">Максимальная яркость белого светодиода</string>
     <string name="white_torch_brightness_summary_head">Установить максимальную яркость белого светодиода</string>
+    <string name="category_screen_color">Цветовая гамма экрана</string>
+    <string name="rgb_red">Красный</string>
+    <string name="rgb_blue">Синий</string>
+    <string name="rgb_green">Зеленый</string>
+    <string name="category_kcal_extras">Тонкая настройка</string>
+    <string name="rgb_min">Минимальные RGB значения</string>
+    <string name="sat_intensity">Насыщенность</string>
+    <string name="scr_hue">Цвет</string>
+    <string name="scr_val">Яркость</string>
+    <string name="scr_cont">Контрастность</string>
+    <string name="plus_one">+1</string>
+    <string name="minus_one">-1</string>
+    <string name="restore_default">По умолчанию</string>
+    <string name="restore_on_boot">Сохранить настройки (антисброс)</string>
+    <string name="category_kcal_presets">Kcal пресеты</string>
+    <string name="kcal_presets_title">Использование kcal пресетов</string>
+    <string name="presets_list_title">Выбор kcal пресета</string>
 </resources>
