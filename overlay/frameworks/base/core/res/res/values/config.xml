@@ -464,8 +464,8 @@
          will not debounce light sensor readings -->
     <integer name="config_lightSensorWarmupTime">200</integer>
 
+    <bool name="config_enableSmartPixels">true</bool>
+    <!-- Whether the device supports Smart Pixels -->
 </resources>
-
-
 
 
