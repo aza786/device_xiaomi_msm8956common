@@ -483,7 +483,7 @@
 
     <!-- Gestures' key codes. If the gesture is not supported set it to 0. -->
     <integer name="config_doubleTapKeyCode">143</integer>
-    <integer name="config_drawVKeyCode">252</integer>
+    <!--<integer name="config_drawVKeyCode">252</integer>
     <integer name="config_drawInverseVKeyCode">255</integer>
     <integer name="config_drawOKeyCode">250</integer>
     <integer name="config_drawMKeyCode">247</integer>
@@ -491,7 +491,7 @@
     <integer name="config_drawSKeyCode">248</integer>
     <integer name="config_drawArrowLeftKeyCode">253</integer>
     <integer name="config_drawArrowRightKeyCode">254</integer>
-    <integer name="config_twoFingerSwipeKeyCode">251</integer>
+    <integer name="config_twoFingerSwipeKeyCode">251</integer> -->
 
     <!-- Default settings for gestures
              0 - Disabled
