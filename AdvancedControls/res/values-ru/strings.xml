@@ -14,7 +14,8 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">Xiaomi</string>
+	<string name="screen_gestures_panel_summary">Вибрация, Вспышка, KCAL</string>
+    <string name="app_name">Настройки устройства</string>
     <string name="advanced_settings">Настройки устройства</string>
     <string name="category_vibrator">Вибрация</string>
     <string name="vib_strength_title_head">Сила</string>

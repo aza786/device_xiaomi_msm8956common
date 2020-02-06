@@ -14,8 +14,9 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">AdvancedSaxControls</string>
-    <string name="advanced_settings">AdvancedSaxControls</string>
+    <string name="screen_gestures_panel_summary">Vibration, Flashlight, KCAL</string>
+    <string name="app_name">AdvancedControls</string>
+    <string name="advanced_settings">AdvancedControls</string>
     <string name="category_vibrator">Vibrator</string>
     <string name="vib_strength_title_head">Strength</string>
     <string name="vib_strength_summary_head">Define the strength of the vibrator</string>
