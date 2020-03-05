@@ -139,6 +139,18 @@ on boot
     chown root system /sys/devices/platform/kcal_ctrl.0/kcal_cont
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
 
+# AdvancedControls
+    chown root system /sys/devices/soc.0/fpc_fpc1020.110/wakeup_enable
+    chmod 0660 /sys/devices/soc.0/fpc_fpc1020.110/wakeup_enable
+    chown root system /sys/kernel/sound_control/headphone_gain
+    chmod 0660 /sys/kernel/sound_control/headphone_gain
+    chown root system /sys/kernel/sound_control/mic_gain
+    chmod 0660 /sys/kernel/sound_control/mic_gain
+    chown root system /sys/devices/soc.0/qpnp-smbcharger-16/power_supply/battery/constant_charge_current_max
+    chmod 0660 /sys/devices/soc.0/qpnp-smbcharger-16/power_supply/battery/constant_charge_current_max
+    chown root system /sys/devices/virtual/timed_output/vibrator/vtg_level
+    chmod 0660 /sys/devices/virtual/timed_output/vibrator/vtg_level
+
     #Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 0770 radio radio
     chmod 2770 /dev/socket/qmux_radio
