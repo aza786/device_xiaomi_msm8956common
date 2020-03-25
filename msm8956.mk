@@ -509,7 +509,7 @@ PRODUCT_COPY_FILES += \
 
 #Google Camera
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/privapp-permissions-gcam.xml:system/product/etc/permissions/privapp-permissions-gcam.xml
+    $(LOCAL_PATH)/permissions/privapp-permissions-gcam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-gcam.xml
 
 # AdvancedControls
 PRODUCT_PACKAGES += \
