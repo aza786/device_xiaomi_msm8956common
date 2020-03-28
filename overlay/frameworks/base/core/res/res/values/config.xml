@@ -345,6 +345,7 @@
         <item>"/system/framework/boot-UxPerformance.vdex"</item>
         <item>"/product/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/product/priv-app/SystemUI/oat/arm64/SystemUI.odex"</item>
+        <item>"/product/priv-app/SystemUI/oat/arm64/SystemUI.vdex"</item>
         <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
 
