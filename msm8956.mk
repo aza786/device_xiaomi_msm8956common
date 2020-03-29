@@ -312,6 +312,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.aw2013
 
+# Lineage hardware
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.msm8956
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
