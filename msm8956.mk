@@ -515,9 +515,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AdvancedControls
 
-#MarkupGoogle
+#Zuk Extras
 PRODUCT_PACKAGES += \
-    MarkupGoogle
+    ZukPref
 
 
 # Cast hacks
