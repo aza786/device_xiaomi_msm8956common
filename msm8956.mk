@@ -92,7 +92,7 @@ PRODUCT_PACKAGES += \
 
 # Doze mode
 PRODUCT_PACKAGES += \
-    CustomDoze
+    XiaomiDoze
 
 # Audio
 PRODUCT_PACKAGES += \

@@ -18,6 +18,6 @@
      
   <bool name="config_show_volumeRockerWake">true</bool>
 
-<string name="config_customDozePackage">com.custom.ambient.display/com.custom.ambient.display.DozeSettings</string>
+<string name="config_customDozePackage">com.android.systemui/com.android.systemui.doze.DozeService</string>
 
 </resources>
