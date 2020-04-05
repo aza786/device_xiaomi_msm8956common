@@ -30,7 +30,7 @@ LOCAL_OVERRIDES_PACKAGES := Jelly Browser
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := BlackPlayer
+LOCAL_MODULE := Phonograph
 LOCAL_SRC_FILES := priv-app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
