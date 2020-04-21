@@ -503,11 +503,6 @@
 
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
   
-    <!-- The list of components which should be automatically disabled for a specific device. -->
-    <string-array name="config_disabledComponents" translatable="false">
-    <item>com.google.android.googlequicksearchbox/com.google.android.hotword.service.HotwordService</item>
-    </string-array>
-
 </resources>
 
 
