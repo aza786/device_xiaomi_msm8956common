@@ -20,7 +20,7 @@ LOCAL_OVERRIDES_PACKAGES := Recorder OPScreenRecorder
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := FirefoxLite
+LOCAL_MODULE := MintBrowser
 LOCAL_SRC_FILES := priv-app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
