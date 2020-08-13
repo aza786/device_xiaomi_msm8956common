@@ -1,0 +1,55 @@
+From aeca9814e0da8b87a6954f0d4f99a8c647dd2d65 Mon Sep 17 00:00:00 2001
+From: cb <billchen1977@gmail.com>
+Date: Thu, 28 Sep 2017 16:31:59 +0800
+Subject: Revert "Add support to force disable enhanced sco commands"
+
+This reverts commit a7de66940ade2ed19f5e002d0f9c07c828621599.
+
+(cherry picked from commit b9419f1154d02482f0444800e58ae94a02874822)
+---
+ device/src/controller.cc     | 4 ----
+ internal_include/bt_target.h | 6 ------
+ 2 files changed, 10 deletions(-)
+
+diff --git a/device/src/controller.cc b/device/src/controller.cc
+index 6525c14f1..d843932e7 100644
+--- a/device/src/controller.cc
++++ b/device/src/controller.cc
+@@ -22,7 +22,6 @@
+ 
+ #include <base/logging.h>
+ 
+-#include "bt_target.h"
+ #include "bt_types.h"
+ #include "btcore/include/event_mask.h"
+ #include "btcore/include/module.h"
+@@ -128,9 +127,6 @@ static future_t* start_up(void) {
+       AWAIT_COMMAND(packet_factory->make_read_local_supported_commands());
+   packet_parser->parse_read_local_supported_commands_response(
+       response, supported_commands, HCI_SUPPORTED_COMMANDS_ARRAY_SIZE);
+-#if (BTM_SCO_ENHANCED_SYNC_ENABLED == FALSE)
+-  supported_commands[29] &= ~0x08;
+-#endif
+ 
+   // Read page 0 of the controller features next
+   uint8_t page_number = 0;
+diff --git a/internal_include/bt_target.h b/internal_include/bt_target.h
+index e33f0b580..d12223425 100644
+--- a/internal_include/bt_target.h
++++ b/internal_include/bt_target.h
+@@ -286,12 +286,6 @@
+ #define BTM_DISC_DURING_RS TRUE
+ #endif
+ 
+-/*  This is used to work around a controller bug that report supporting
+- *  enhanced synchronous commands */
+-#ifndef BTM_SCO_ENHANCED_SYNC_ENABLED
+-#define BTM_SCO_ENHANCED_SYNC_ENABLED TRUE
+-#endif
+-
+ /**************************
+  * Initial SCO TX credit
+  ************************/
+-- 
+2.17.1
+

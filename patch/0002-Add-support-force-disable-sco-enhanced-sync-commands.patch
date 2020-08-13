@@ -1,0 +1,55 @@
+From f200c2355f0cdf50ae38bc4401341bbe61555aa5 Mon Sep 17 00:00:00 2001
+From: Magicxavi <rolfpeterkesche@gmail.com>
+Date: Wed, 4 Mar 2020 14:46:34 +0200
+Subject: Add support force disable sco enhanced sync commands
+
+(cherry picked from commit 53294891018208bf3ccef0fa85d8dd52510485ba)
+---
+ device/src/controller.cc     | 8 ++++++++
+ internal_include/bt_target.h | 5 +++++
+ 2 files changed, 13 insertions(+)
+
+diff --git a/device/src/controller.cc b/device/src/controller.cc
+index d843932e7..5a30f79ec 100644
+--- a/device/src/controller.cc
++++ b/device/src/controller.cc
+@@ -387,12 +387,20 @@ static bool supports_master_slave_role_switch(void) {
+ 
+ static bool supports_enhanced_setup_synchronous_connection(void) {
+   assert(readable);
++#if (BTM_SCO_ENHANCED_SYNC_DISABLED == TRUE)
++  return false;
++#else
+   return HCI_ENH_SETUP_SYNCH_CONN_SUPPORTED(supported_commands);
++#endif
+ }
+ 
+ static bool supports_enhanced_accept_synchronous_connection(void) {
+   assert(readable);
++#if (BTM_SCO_ENHANCED_SYNC_DISABLED == TRUE)
++  return false;
++#else
+   return HCI_ENH_ACCEPT_SYNCH_CONN_SUPPORTED(supported_commands);
++#endif
+ }
+ 
+ static bool supports_ble(void) {
+diff --git a/internal_include/bt_target.h b/internal_include/bt_target.h
+index d12223425..a039c75e4 100644
+--- a/internal_include/bt_target.h
++++ b/internal_include/bt_target.h
+@@ -286,6 +286,11 @@
+ #define BTM_DISC_DURING_RS TRUE
+ #endif
+ 
++/* Disables Sco Enhanced Absent on pre-Oreo bluetooth Firmware */
++#ifndef BTM_SCO_ENHANCED_SYNC_DISABLED
++#define BTM_SCO_ENHANCED_SYNC_DISABLED FALSE
++#endif
++
+ /**************************
+  * Initial SCO TX credit
+  ************************/
+-- 
+2.17.1
+
