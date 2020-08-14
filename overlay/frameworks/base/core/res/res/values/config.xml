@@ -497,7 +497,6 @@
     <integer name="config_sysBatteryTempMultiplier">10</integer>
 
     <!-- Cutout -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 L 0, 0 C 0,0 0,0 0,0</string>
     <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">@*android:string/config_mainBuiltInDisplayCutout</string>
 
     <!-- Whether device supports an alt. ambient display -->
